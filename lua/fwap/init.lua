@@ -28,7 +28,6 @@ vim.opt.termguicolors = true
 vim.opt.undofile = true
 
 
-
 local title_str = ""
 
 if vim.g.is_linux then
