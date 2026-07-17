@@ -1,4 +1,7 @@
 require("fwap.remap")
+vim.g.loaded_perl_provider = 0 -- Disable perl provider
+vim.g.loaded_ruby_provider = 0 -- Disable ruby provider
+vim.g.loaded_node_provider = 0 
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -19,3 +22,17 @@ vim.lsp.enable({
       -- bash
       "bashls"
     })
+
+
+vim.opt.termguicolors = true
+vim.opt.undofile = true
+
+
+
+local title_str = ""
+
+if vim.g.is_linux then
+
+	title_str = vim.fn.hostname() .. "  "
+
+end
