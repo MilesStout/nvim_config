@@ -12,7 +12,6 @@ vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "none" })
 vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
 vim.api.nvim_set_hl(0, "FoldColumn", { bg = "none" })
 vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
-
 vim.opt.termguicolors = true
 vim.opt.undofile = true
 require("lsp").setup()
