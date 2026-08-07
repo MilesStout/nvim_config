@@ -4,23 +4,22 @@ return{
 	build = ":TSUpdate",
 	branch = "main",
 	opts = {
-		
+		highlight = {
+		    enable = true,
+		},
 		ensure_installed = {
 			"bash",
-			"html",
-			"javascript",
 			"json",
 			"lua",
-			"markdown",
-			"markdown_inline",
 			"python",
-			"query",
 			"regex",
 			"tsx",
-			"typescript",
 			"vim",
 			"yaml",
 		      },
+
+		indent = {enable = true},
+		autotage = { enable = true}
 
 
 	},

@@ -47,6 +47,13 @@ return{
       require("mini.icons").mock_nvim_web_devicons()
       require("mini.icons").tweak_lsp_kind()
       end,
+  },
+
+  {
+      'brenoprata10/nvim-highlight-colors',
+      config = function()
+	  require('nvim-highlight-colors').setup({})
+      end
   }
 
 }

@@ -2,7 +2,7 @@ local M = {}
 
 function M.setup()
 
-  local servers = { "pyright", "lua_ls", "bashls", "ltex", "jdtls" }
+  local servers = { "pyright", "lua_ls", "bashls", "ltex", "jdtls", "clangd" }
 
   vim.opt.complete = ".,o"
   vim.opt.completeopt = { "fuzzy", "menuone", "noselect", "popup" }
